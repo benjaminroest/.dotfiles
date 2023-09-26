@@ -38,11 +38,6 @@ function module.apply_to_config(config)
 		{
 			key = "w",
 			mods = "CMD",
-			action = wezterm.action.CloseCurrentTab({ confirm = true }),
-		},
-		{
-			key = "w",
-			mods = "CTRL",
 			action = wezterm.action({ CloseCurrentPane = { confirm = true } }),
 		},
 		{
@@ -111,6 +106,8 @@ function module.apply_to_config(config)
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivateTabRelative = -1 }),
 		},
+		{ key = "LeftArrow", mods = "CMD|SHIFT", action = wezterm.action.MoveTabRelative(-1) },
+		{ key = "RightArrow", mods = "CMD|SHIFT", action = wezterm.action.MoveTabRelative(1) },
 		{ key = "1", mods = "CMD", action = wezterm.action({ ActivateTab = 0 }) },
 		{ key = "2", mods = "CMD", action = wezterm.action({ ActivateTab = 1 }) },
 		{ key = "3", mods = "CMD", action = wezterm.action({ ActivateTab = 2 }) },
@@ -150,6 +147,16 @@ function module.apply_to_config(config)
 			key = "R",
 			mods = "CMD|SHIFT",
 			action = wezterm.action.ReloadConfiguration,
+		},
+		{
+			key = "=",
+			mods = "CMD",
+			action = wezterm.action.IncreaseFontSize,
+		},
+		{
+			key = "-",
+			mods = "CMD",
+			action = wezterm.action.DecreaseFontSize,
 		},
 	}
 end

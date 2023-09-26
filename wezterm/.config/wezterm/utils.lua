@@ -86,6 +86,10 @@ function M.get_process_icon(tab)
 			{ Foreground = { Color = colors.peach } },
 			{ Text = wezterm.nerdfonts.dev_git },
 		},
+    ["lazygit"] = {
+			{ Foreground = { Color = colors.mauve } },
+			{ Text = wezterm.nerdfonts.dev_git },
+		},
 		["lua"] = {
 			{ Foreground = { Color = colors.blue } },
 			{ Text = wezterm.nerdfonts.seti_lua },
@@ -115,17 +119,17 @@ function M.get_current_working_dir(tab)
 	local current_dir = tab.active_pane.current_working_dir
 
 	if HOME_DIR == current_dir then
-		return "~"
+		return " ~"
 	end
 
 	current_dir = string.gsub(current_dir, HOME_DIR, "~")
-	local result = string.format(" %s", string.match(current_dir, "([^/]*/?[^/]*)$"))
-	local current_folder = string.match(result, "/.*")
+	local result = string.format(" %s", string.match(current_dir, "([^/]*)$"))
+	-- local current_folder = string.match(result, "/.*")
 
   -- If the current dir is too long then dont show parent dir
-	if string.len(current_folder) >= 20 then
-		return string.match(result, "/.*")
-	end
+	-- if string.len(current_folder) >= 20 then
+		-- return string.match(result, "/.*")
+	-- end
 
 	return result
 end

@@ -38,7 +38,7 @@ local config = {
 	},
 	warn_about_missing_glyphs = false,
 	font_size = 15,
-	line_height = 1.0,
+	line_height = 1.2,
 	-- font_antialias = "Grayscale",
 
 	-- Cursor style
@@ -90,9 +90,10 @@ local config = {
 	window_padding = {
 		left = 5,
 		right = 5,
-		top = 5,
-		bottom = 5,
+		top = 2,
+		bottom = 0,
 	},
+window_decorations = "RESIZE",
 	-- Tab Bar
 	enable_tab_bar = true,
 	use_fancy_tab_bar = false,
@@ -100,6 +101,9 @@ local config = {
 	show_tab_index_in_tab_bar = false,
 	tab_bar_at_bottom = true,
   tab_max_width = 80,
+  custom_block_glyphs = true,
+  underline_position = "-5px",
+  underline_thickness = "2px",
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
