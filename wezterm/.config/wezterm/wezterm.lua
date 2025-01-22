@@ -19,7 +19,7 @@ local SOLID_RIGHT_ARROW = utf8.char(0xe0b0)
 local config = {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
-	color_scheme = "Everblush",
+	color_scheme = "Oxocarbon Dark (Gogh)",
 	-- Font config
 	font = font_with_fallback(font_name),
 	font_rules = {
@@ -39,12 +39,13 @@ local config = {
 	warn_about_missing_glyphs = false,
 	font_size = 15,
 	line_height = 1.2,
+  max_fps = 120,
 	-- font_antialias = "Grayscale",
 
 	-- Cursor style
 	default_cursor_style = "BlinkingBlock",
 	animation_fps = 30,
-	force_reverse_video_cursor = true,
+	force_reverse_video_cursor = false,
 	hyperlink_rules = {
 		-- Linkify things that look like URLs and the host has a TLD name.
 		-- Compiled-in default. Used if you don't specify any hyperlink_rules.
@@ -88,9 +89,9 @@ local config = {
 	bold_brightens_ansi_colors = true,
 	-- Padding
 	window_padding = {
-		left = 5,
-		right = 5,
-		top = 2,
+		left = 0,
+		right = 0,
+		top = 0,
 		bottom = 0,
 	},
 window_decorations = "RESIZE",
@@ -105,15 +106,18 @@ window_decorations = "RESIZE",
   underline_position = "-5px",
   underline_thickness = "2px",
 	-- General
+  check_for_updates = true,
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
 	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
+  -- window_background_opacity = 0.6,
+  -- macos_window_background_blur = 20,
 	-- window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }
 
 keybinds.apply_to_config(config)
-catppuccin.apply_to_config(config)
+-- catppuccin.apply_to_config(config)
 bar.setup()
 
 return config

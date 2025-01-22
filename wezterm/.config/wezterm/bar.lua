@@ -27,7 +27,7 @@ M.setup = function()
         { Text = " LEADER " },
       })
     end
-    window:set_right_status(name or "")
+    window:set_right_status((name or "") .. window:active_workspace())
   end)
 
   -- Tab title

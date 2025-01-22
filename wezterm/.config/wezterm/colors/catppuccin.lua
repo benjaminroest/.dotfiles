@@ -39,8 +39,8 @@ function module.apply_to_config(config)
 config.colors = {
   foreground = colors.text,
   background = colors.base,
-  cursor_bg = colors.rosewater,
-  cursor_border = colors.rosewater,
+  cursor_bg = "white",
+  cursor_border = "white",
   cursor_fg = colors.crust,
   selection_bg = colors.surface2,
   selection_fg = colors.text,

@@ -10,11 +10,14 @@ fi
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "zsh-users/zsh-history-substring-search"
 plug "romkatv/powerlevel10k"
-plug "zap-zsh/sudo"
 plug "chivalryq/git-alias"
 
 plug "$HOME/.config/zsh/defaults.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/p10k.zsh"
 plug "$HOME/.config/zsh/nvm.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

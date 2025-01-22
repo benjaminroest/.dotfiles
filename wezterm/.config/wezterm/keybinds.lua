@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
+local workspaces = require("workspaces")
 
 local module = {}
 
@@ -157,6 +158,21 @@ function module.apply_to_config(config)
 			key = "-",
 			mods = "CMD",
 			action = wezterm.action.DecreaseFontSize,
+		},
+		{
+			key = "]",
+			mods = "CMD",
+			action = act.SwitchWorkspaceRelative(1),
+		},
+		{
+			key = "[",
+			mods = "CMD",
+			action = act.SwitchWorkspaceRelative(-1),
+		},
+		{
+			key = "s",
+			mods = "CMD",
+			action = workspaces.workspace_selector(),
 		},
 	}
 end

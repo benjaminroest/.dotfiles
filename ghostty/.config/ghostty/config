@@ -1,0 +1,7 @@
+theme = oxocarbon
+cursor-style = block
+shell-integration-features = no-cursor
+font-size = 15
+quit-after-last-window-closed = true
+macos-titlebar-proxy-icon = hidden
+mouse-hide-while-typing = true
