@@ -1,0 +1,13 @@
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[general]
+import = ["/home/orbis/.config/alacritty/oxocarbon.toml"]
+
+[cursor.style]
+blinking = "On"

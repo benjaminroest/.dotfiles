@@ -18,7 +18,7 @@ local SOLID_RIGHT_ARROW = utf8.char(0xe0b0)
 
 local config = {
 	-- OpenGL for GPU acceleration, Software for CPU
-	front_end = "OpenGL",
+	front_end = "WebGpu",
 	color_scheme = "Oxocarbon Dark (Gogh)",
 	-- Font config
 	font = font_with_fallback(font_name),
@@ -37,7 +37,7 @@ local config = {
 		},
 	},
 	warn_about_missing_glyphs = false,
-	font_size = 15,
+	font_size = 12,
 	line_height = 1.2,
   max_fps = 120,
 	-- font_antialias = "Grayscale",
@@ -94,7 +94,7 @@ local config = {
 		top = 0,
 		bottom = 0,
 	},
-window_decorations = "RESIZE",
+window_decorations = "NONE",
 	-- Tab Bar
 	enable_tab_bar = true,
 	use_fancy_tab_bar = false,
