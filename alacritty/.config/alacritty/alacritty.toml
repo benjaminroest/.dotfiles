@@ -1,9 +1,9 @@
 
 [font]
-size = 14.0
+size = 13.0
 
 [font.normal]
-family = "Hack Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 [general]
@@ -11,3 +11,6 @@ import = ["/home/orbis/.config/alacritty/oxocarbon.toml"]
 
 [cursor.style]
 blinking = "On"
+
+[window]
+opacity = 0.8

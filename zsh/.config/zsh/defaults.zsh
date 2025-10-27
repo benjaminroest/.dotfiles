@@ -9,7 +9,9 @@ bindkey -v
 
 # Search substring plugin
 bindkey '^[[A' history-substring-search-up
+bindkey '^[OA' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey '^[OB' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
