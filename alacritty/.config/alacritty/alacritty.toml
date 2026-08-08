@@ -3,14 +3,14 @@
 size = 13.0
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "MonaspiceNe Nerd Font"
 style = "Regular"
 
 [general]
-import = ["/home/orbis/.config/alacritty/oxocarbon.toml"]
+import = ["/home/benjamin/.config/alacritty/teide_darker.toml"]
 
 [cursor.style]
 blinking = "On"
 
 [window]
-opacity = 0.8
+opacity = 1

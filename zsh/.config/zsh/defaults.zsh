@@ -15,9 +15,7 @@ bindkey '^[OB' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-path+=('/Users/benjaminroest/Library/Python/3.9/bin')
-path+=('/Users/benjaminroest/Scripts')
-path+=('/home/orbis/scripts')
+path+=('/home/benjamin/scripts')
 
 export PATH
 export VUE_EDITOR=/Users/benjaminroest/Scripts/launch-editor
